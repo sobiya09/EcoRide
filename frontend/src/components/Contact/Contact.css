@@ -1,0 +1,86 @@
+
+#contactpage
+{
+    min-height: calc(100vh-6rem);
+     width: 100vw;
+     max-width: 60rem;
+     margin: 0 auto;
+     text-align: center;
+    margin-top: 5rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 1rem;
+      background: rgb(243, 242, 242);
+    border-radius: 10px;
+   
+
+} 
+
+.contact-tittle
+{
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: center;
+}
+.contact-para
+{
+    font-size: 1rem;
+    font-weight: 400;
+    
+   
+}
+
+.contact-form
+{
+    margin: 1rem ;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 6  0rem;
+}  
+.name,.email,.message
+{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;  
+    padding: 0.5rem 1rem;
+    color: white ;
+    border: none ;
+    border-radius: 0.5rem ;
+    background: #fbfbfb;
+       
+}
+.sub-but
+{
+    background:#00F78D;
+    padding: 0.8rem 4rem;
+    border: none;
+    border-radius: 0.8rem; 
+    margin: 2rem;
+}
+.links
+{
+   display: flex;
+   flex-wrap: wrap;
+}
+.link
+{  
+    object-fit: cover;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+.sub-but:hover
+{
+    background-color:#07dc80 ;
+    cursor: pointer;
+    
+    
+    
+     
+}
