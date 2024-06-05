@@ -116,6 +116,9 @@
     font-size: 1.8rem;
     font-weight: 800;
     text-align: center;
+    background-color: #00F78D;
+    padding: 10px;
+    border-radius: 10px;
    
     
 
@@ -154,6 +157,7 @@
        top: 70px;
         
         object-fit: cover;
+        opacity: 0.3;
 
 
 
@@ -171,6 +175,7 @@
        
        right: 0;
         object-fit: cover;
+        opacity: 0.3;
 
 
 
@@ -189,6 +194,7 @@
        width: 100%;
         object-fit: cover;
         top: 20%;
+        opacity: 0.3;
 
 
 
@@ -207,6 +213,7 @@
        width: 100%;
         object-fit: cover;
         top: 30%;
+        opacity: 0.3;
 
 
 

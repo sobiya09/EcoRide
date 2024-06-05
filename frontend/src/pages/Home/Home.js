@@ -32,9 +32,9 @@ const Home = () => {
         <img src={logo} alt="logo" className="nav-img" />
         <div className="nav-menu">
           <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="nav-menu-item">Home</Link>
-          <Link activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={500} className="nav-menu-item">About</Link>
-          <Link activeClass="active" to="services" spy={true} smooth={true} offset={-100} duration={500} className="nav-menu-item">Services</Link>
-          <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={500} className="nav-menu-item">Contact Us</Link>
+          <Link activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={500} className="nav-menu-item">AboutUs</Link>
+          <Link activeClass="active" to="services" spy={true} smooth={true} offset={-100} duration={500} className="nav-menu-item">OurServices</Link>
+          <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={500} className="nav-menu-item">ContactUs</Link>
         </div>
         <button className="nav-button" onClick={handleLogin}>
           Login | Register
@@ -43,7 +43,7 @@ const Home = () => {
       </div>
 
       <section id="about">
-        <h2 className="about-tit">About</h2>
+        <h2 className="about-tit">AboutUs</h2>
         <div className="about-container">
           <p className="about-text">
           Welcome to EcoRide, your go-to platform for simplifying commuting and making it more enjoyable. At EcoRide, we believe that transportation should be convenient, cost-effective, and eco-friendly. That's why we've created a user-friendly web application that connects commuters who share similar routes and schedules, making carpooling easier than ever before.<br/>
