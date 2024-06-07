@@ -71,6 +71,10 @@
       width: 40px;
     }
   }
+
+  .header-image{
+    width:100%;
+  }
   
   #about
 {
