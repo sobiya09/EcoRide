@@ -8,6 +8,7 @@ import insta from '../Assets/insta.png';
 import twi from '../Assets/twitter.png';
 import fb from '../Assets/facebook.png';
 import log_img from '../Assets/log_img.png';
+import header from '../Assets/header.png';
 
 const Home = () => {
   const [overly, setOverly] = useState(false);
@@ -20,6 +21,8 @@ const Home = () => {
     setOverly(false);
   };
 
+  const year = new Date();
+
   return (
     <>
       {overly && (
@@ -30,7 +33,7 @@ const Home = () => {
               <img src={logo} className='log-logo' alt='kjsdfhksj'/>
             <img src={log_img} alt='logimage' className='loginImage'/>
             <h4 className='register-tittle'> Welcome, Friend !</h4>
-            <span className='register-text'>Enter your personal details to use all of site features</span>
+            <span className='register-text'>Enter your personal details to use all of site features.<p>Don't you have an account?</p></span>
             <button className='log-but'>SIGN UP</button>
             </div>
             <div className="log-detail">
@@ -58,6 +61,9 @@ const Home = () => {
           Login | Register
         </button>
         <img src={menu} alt="menu" className="nav-menu-img" />
+      </div>
+      <div className="header-image">
+        <img src={header} alt='headerimage' className='header-image'/>
       </div>
 
       <section id="about">
@@ -92,7 +98,7 @@ const Home = () => {
       </section>
 
       <footer className="footer">
-        Copyright &#169; 2024 <span>EcoRide</span>. All rights reserved.
+        Copyright &#169; {year.getFullYear()} <span>ecoRide</span>. All rights reserved.
       </footer>
     </>
   );
