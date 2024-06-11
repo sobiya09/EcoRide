@@ -1,0 +1,15 @@
+.footer {
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: medium;
+    font-weight: 550;
+  }
+  
+  .footer span {
+    margin-left: 0.3rem;
+    color: #00F78D;
+  }
