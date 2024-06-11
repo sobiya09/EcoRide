@@ -22,7 +22,7 @@
     z-index: 7;
     display: flex;
     flex-direction: column;
-   
+
     margin: 0 auto;
 }
 
@@ -31,8 +31,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-   
-   
+
+
 }
 
 .close-btn {
@@ -59,18 +59,17 @@
     margin-left: 1rem;
 }
 
-.loginBg
-{
+.loginBg {
     width: 100%;
 }
-.login-con
-{
+
+.login-con {
     display: flex;
     top: 0;
 }
-.login-but
-{
-  
+
+.login-but {
+
     margin: 5px auto;
     padding: 10px 70px;
     border-radius: 20px;
@@ -79,68 +78,126 @@
     font-weight: 600;
     font-size: 15px;
     margin-top: 20px;
-    
-    
-    
-   
    
 
 }
-.log-but
-{
-  
+
+.log-but {
+
     margin: 5px auto;
     padding: 10px 70px;
     border-radius: 20px;
     border: solid 2px #000000;
     background-color: #3a3939;
     color: white;
-    
+
 
 }
+
 .form-control {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  .log-title {
-    
-   
+}
+
+.log-title {
+
+
     font-weight: 650;
-  
+    
     padding: 10px 0;
     text-transform: uppercase;
     font-size: 30px;
     color: #868080;
     text-align: center;
-    
- 
+
+
 }
-.forgot
-{
+
+.forgot {
     color: rgb(24, 89, 174);
     font-size: smaller;
     font-weight: bold;
 
 }
-.Rightside
-{
+
+.Rightside {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-
    
     
     
 }
-.leftside
-{
+
+.leftside {
     width: 50%;
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+    .popup-inner {
+        width: 90vw;
+        height: auto;
+    }
 
+    .login-con {
+        flex-direction: column;
+    }
+
+    .loginBg {
+        display: none;
+        /* Hide the background image on smaller screens */
+    }
+
+    .log-title {
+        font-size: 24px;
+    }
+
+    .login-but,
+    .log-but {
+        padding: 10px 50px;
+    }
+
+    .form-control {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-inner {
+        padding: 1rem;
+    }
+
+    .close-btn {
+        padding: 0.2rem 0.5rem;
+        font-size: 0;
+    }
+
+    .web-logo {
+        width: 100px;
+    }
+
+    .arrow {
+        width: 20px;
+    }
+
+    .log-title {
+        font-size: 20px;
+    }
+
+    .form-control {
+        padding: 6px;
+    }
+
+    .login-but, .log-but {
+
+        padding: 5px 15px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
