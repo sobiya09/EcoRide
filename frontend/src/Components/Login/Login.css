@@ -66,6 +66,7 @@
 .login-con
 {
     display: flex;
+    top: 0;
 }
 .login-but
 {
@@ -78,6 +79,10 @@
     font-weight: 600;
     font-size: 15px;
     margin-top: 20px;
+    
+    
+    
+   
    
 
 }
@@ -103,7 +108,7 @@
     
    
     font-weight: 650;
-    
+  
     padding: 10px 0;
     text-transform: uppercase;
     font-size: 30px;
@@ -124,6 +129,11 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
    
     
     

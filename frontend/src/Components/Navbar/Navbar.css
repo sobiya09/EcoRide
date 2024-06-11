@@ -50,7 +50,7 @@
     width: 80px;
   }
   
-  @media (max-width: 835px) {
+  @media (max-width: 880px) {
     .nav-menu-item {
       display: none;
     }
