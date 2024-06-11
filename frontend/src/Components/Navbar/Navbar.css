@@ -49,6 +49,12 @@
     display: none;
     width: 80px;
   }
+
+  .header-image{
+    width:100%;
+  }
+
+  /* Responsive Styles */
   
   @media (max-width: 880px) {
     .nav-menu-item {
@@ -60,7 +66,10 @@
     .nav-menu-img {
       display: flex;
     }
+    .header-image {
+      width: 100%;
   }
+}
   
   @media (max-width: 390px) {
     .nav-img {
@@ -70,8 +79,8 @@
     .nav-menu-img {
       width: 40px;
     }
+    .header-image{
+      width:100%;
+    }
   }
 
-  .header-image{
-    width:100%;
-  }
