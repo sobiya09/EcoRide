@@ -48,11 +48,13 @@
   .nav-menu-img {
     display: none;
     width: 80px;
+    object-fit: cover;
   }
 
   .header-image{
     width:100%;
   }
+  
 
   /* Responsive Styles */
   

@@ -5,6 +5,7 @@ import arrow from '../Assets/arrow.png'
 import logo from '../Assets/weblogo.png';
 import loginbg from '../Assets/loginbg.png';
 
+
 const Login = ({ setShowLogin }) => {
   const [isLogin, setIsLogin] = useState(true);
 
@@ -49,11 +50,13 @@ const Login = ({ setShowLogin }) => {
          </div>
           </div>
         ) : (
-          <div>
-            <h2>Sign Up Form</h2>
-            {/* Signup form fields here */}
-            <button onClick={toggleForm}>Login</button>
+          <div >
+             <h2>Login Form</h2>
+           
+           <button className='log-but'  onClick={toggleForm}>Login</button>
+            
           </div>
+          
         )}
       </div>
     </div>

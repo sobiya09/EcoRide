@@ -8,6 +8,7 @@ import header from '../Assets/header.png';
 
 
 const Navbar = ({ setShowLogin }) => {
+  
   return (
     <>
      <div className="navbar-container">

@@ -66,6 +66,7 @@
 .login-con {
     display: flex;
     top: 0;
+    transition: all 0.3s ease;
 }
 
 .login-but {
@@ -119,6 +120,7 @@
     color: rgb(24, 89, 174);
     font-size: smaller;
     font-weight: bold;
+    cursor: pointer;
 
 }
 
