@@ -84,7 +84,9 @@
   @media (max-width: 880px) {
     .nav-menu-item {
       display: none;
+
     }
+    
     .nav-button {
       display: none;
     }
@@ -108,6 +110,7 @@
       width:100%;
     }
   }
+  
   
 
 
@@ -218,11 +221,111 @@
       opacity: 0.3;
     }
   }
+  /* services */
+  #services
+{
+    min-height: calc(100vh-6rem);
+    overflow: hidden;
+    width: 100vw;
+    max-width: 75rem;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+   
+}    
+.services-img
+{
+    width: 100px;
+    margin-right: 2rem;  
+    object-fit: cover;
+}
+.services-tittle
+{
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: center;
+    background-color: #00F78D;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+.services-para
+{
+    font-size: 15px;
+    font-weight: 450;
+    align-items: center;
+    color: rgb(54, 50, 50);
+   
+    
+      
+}
+.services-bars
+{
+margin: 1.5rem;
+width: 100vw;
+max-width: 80%;
+text-align: left;
+ 
+}
+.services-bar 
+{
+display: flex;
+margin: 1rem;
+padding: 1.2rem 1.5rem;
+border-radius: 0.5rem;
+background: rgb(216, 216, 216);
+
+
+}
+.services-bar-text p
+{
+    font-size: medium;
+
+}
+.services-bar-text h2
+{
+font-size: 1.6rem;
+font-weight: 580;
+color:rgb(27, 46, 70);
+}
+@media (max-width: 610px) 
+{
+   .services-bar-text >p
+   {
+    font-size: 0.8rem;
+   }
+}
+@media (max-width: 462px) 
+{
+   .services-img
+   {
+    width: 60px;
+   }
+}
+@media (max-width: 402px) 
+{
+   .services-bar-text h2
+   {
+    font-size: 17px;
+   }
+   .services-bar-text p
+   {
+    font-size: 12px;
+   }
+}
+
+
+
 
 
 
 /* contact */
-#contactpage
+#contact
 {
     min-height: calc(100vh-6rem);
      width: 100vw;
@@ -235,18 +338,23 @@
      align-items: center;
      justify-content: center;
      padding: 1rem;
-      background: rgb(243, 242, 242);
-    border-radius: 10px;
+     border-radius: 10px;
+     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+    
    
 
 } 
 
-.contact-tittle
+.contact-tittle 
 {
     margin: 1rem 0;
     font-size: 1.8rem;
     font-weight: 800;
     text-align: center;
+   
+    padding: 10px;
+    border-radius: 10px;
 }
 .contact-para
 {

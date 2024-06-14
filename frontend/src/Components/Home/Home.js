@@ -32,10 +32,10 @@ const Home = () => {
             <div className="navbar-container">
                 <img src={logo} alt="logo" className="nav-img" />
                 <div className="nav-menu">
-                    <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="nav-menu-item">Home</Link>
-                    <Link activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={500} className="nav-menu-item">About Us</Link>
-                    <Link activeClass="active" to="services" spy={true} smooth={true} offset={-100} duration={500} className="nav-menu-item">Our Services</Link>
-                    <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={500} className="nav-menu-item">Contact Us</Link>
+                    <Link activeClass="active" to="intro" spy={true} smooth={true} offset={0} duration={100} className="nav-menu-item">Home</Link>
+                    <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={100} className="nav-menu-item">About Us</Link>
+                    <Link activeClass="active" to="services" spy={true} smooth={true} offset={0} duration={100} className="nav-menu-item">Our Services</Link>
+                    <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={100} className="nav-menu-item">Contact Us</Link>
                 </div>
                 <button className="nav-button" onClick={handleLogin}>
                     Login | Register
@@ -43,10 +43,10 @@ const Home = () => {
                 <img src={menu} alt="menu" className="nav-menu-img"onClick={()=>setshowmenu(!showmenu)}  />
                 <div className='navmenu' style={{display: showmenu?'flex':'none'}}>
                  
-                <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="list-item"onClick={()=>setshowmenu(false)}>Home</Link>
-                    <Link activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={500} className="list-item"onClick={()=>setshowmenu(false)}>About Us</Link>
-                    <Link activeClass="active" to="services" spy={true} smooth={true} offset={-100} duration={500} className="list-item"onClick={()=>setshowmenu(false)}>Our Services</Link>
-                    <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={500} className="list-item"onClick={()=>setshowmenu(false)}>Contact Us</Link>
+                <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={100} className="list-item"onClick={()=>setshowmenu(false)}>Home</Link>
+                    <Link activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={100} className="list-item"onClick={()=>setshowmenu(false)}>About Us</Link>
+                    <Link activeClass="active" to="services" spy={true} smooth={true} offset={-100} duration={100} className="list-item"onClick={()=>setshowmenu(false)}>Our Services</Link>
+                    <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={100} className="list-item"onClick={()=>setshowmenu(false)}>Contact Us</Link>
                     <Link className="list-item" onClick={() => { handleLogin(); setshowmenu(false); }}>Login</Link>
                   
                </div>
@@ -68,11 +68,42 @@ const Home = () => {
                 </div>
                 <img src={aboutImg} alt="aboutImage" className="about-img" />
             </section>
+
+            {/* services */}
+            <section id='services'>
+        <h2 className='services-tittle'>Our Services</h2>
+        <span className='services-para'>Welcome to our Carpooling Platform, your trusted solution for convenient and efficient ride-sharing. Our platform is designed to bring drivers and passengers together, <br/>ensuring safe and affordable travel options</span>
+        <div className='services-bars'>
+             <div className='services-bar'>
+                 <img className='services-img' src={twi} alt=''/> 
+                 <div className='services-bar-text'>
+                    <h2>AAAA</h2> 
+                    <p>aaaaaaaaaaaaaaaa</p>
+                 </div>
+             </div>
+             <div className='services-bar'>
+                 <img className='services-img' src={insta} alt=''/> 
+                 <div className='services-bar-text'>
+                    <h2>BBBB</h2>
+                    <p>bbbbbbbbbbbb</p> 
+                 </div>
+             </div>
+             <div className='services-bar'>
+                 <img className='services-img' src={fb} alt=''/> 
+                 <div className='services-bar-text'>
+                    <h2>CCCC</h2>
+                    <p>ccccccccccc</p> 
+                 </div>
+             </div>
+        </div>
+
+    </section>
             {/* contactus */}
             <section id="contactpage">
                 <div id="contact">
-                    <h1 className="contact-tittle">Contact us</h1>
-                    <p className="contact-para">Please fill out the form...</p>
+                    {/* <h1 className="contact-tittle">Contact us</h1> */}
+                    <h2 className="contact-tittle">ContactUs</h2>
+                    {/* <p className="contact-para">Please fill out the form...</p> */}
                     <form className="contact-form">
                         <input type="text" className="name" placeholder="Your Name" name="user_name" />
                         <input type="email" className="email" placeholder="Your Email" name="user_email" />
