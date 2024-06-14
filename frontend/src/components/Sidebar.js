@@ -1,10 +1,15 @@
-import React from 'react';
-import logo from '../assets/logo.png';
-import profile from '../assets/profile.JPG';
-import { Link } from 'react-router-dom';
-import { BiHome, BiAddToQueue, BiCurrentLocation, BiNews } from 'react-icons/bi';
-import ReactStars from 'react-rating-stars-component';
-import '../styles/Sidebar.css';
+import React from "react";
+import logo from "../assets/logo.png";
+import profile from "../assets/profile.JPG";
+import { Link } from "react-router-dom";
+import {
+  BiHome,
+  BiAddToQueue,
+  BiCurrentLocation,
+  BiNews,
+} from "react-icons/bi";
+import ReactStars from "react-rating-stars-component";
+import "../styles/Sidebar.css";
 
 const Sidebar = () => {
   return (
@@ -13,7 +18,7 @@ const Sidebar = () => {
         <img src={logo} alt="EcoRide logo" className="logo" />
       </div>
 
-      <div className='menu-list'>
+      <div className="menu-list">
         <Link to="/home" className="item">
           <BiHome className="icon" />
           Home
@@ -37,18 +42,10 @@ const Sidebar = () => {
         <h3 className="profile-heading">J.Abiraj</h3>
       </div>
 
-
       <div className="rating">
-        <ReactStars
-          count={5}
-          size={24}
-          activeColor="#ffd700"
-        />
+        <ReactStars count={5} size={24} activeColor="#ffd700" />
       </div>
-
-       
     </div>
-  )
-}
+  );
+};
 export default Sidebar;
-
