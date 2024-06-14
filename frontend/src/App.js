@@ -34,7 +34,7 @@
 
 
 import React from "react";
-import Sidebar from "./Components/Sidebar";
+import Sidebar from "./components/Sidebar";
 import Newsfeed from "./pages/Newsfeed";
 import Home from './pages/Home';
 import Addride from './pages/Addride';
